@@ -1,0 +1,11 @@
+# Secrets and machine-specific settings: never commit
+.env
+.neon
+
+# Local environments and caches
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.Rhistory
+.RData

@@ -1,0 +1,9 @@
+# Python packages for the pipeline. Install with:
+#   python -m pip install -r requirements.txt
+boto3==1.43.105          # upload/list files in Cloudflare R2 (S3-compatible)
+duckdb==1.5.6            # read raw files from R2, clean them, write Parquet
+pandas==3.0.6            # DataFrames for analysis (DuckDB's .df())
+psycopg[binary]==3.3.6   # Postgres driver for loading into Neon
+python-dotenv==1.2.3     # read settings and secrets from .env
+pytz==2026.4             # DuckDB needs it to return timestamp-with-time-zone columns
+requests==2.34.2         # download files from BLS
